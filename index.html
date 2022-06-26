@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAG ASSET FORM</title>
+    <link rel="stylesheet" href="txt.css">
+    
+</head>
+<body><section>
+    <div class="container">
+        <form action="https://formspree.io/f/xbjwbqea" method="POST" id="my-form">
+         <div class="container">
+            <h1>Asset Registration Form(SAG Corps♥👑		) </h1>
+               
+              <div class="form-group">
+                <label for="firstName"> First Name:</label>
+                <input  id="firstName" name="fName" title="Enter only Alphabet ...Ex:Abcd" placeholder="Enter your first Name" value=""   required  type="text" pattern="[A-z]*"  onkeyup="lettersOnly(this)">
+              </div><br>
+        
+              <div class="form-group">
+                <label for="latsName">Last Name:</label>
+                <input type="text" id="lastName" name="lName" placeholder="Enter your Last Name" pattern="[A-z.]*"  required onkeyup="lettersOnly(this)">
+              </div><br>
+              <div class="form-group">
+               <label for="name of emp">Department:</label>
+               <input type="text/numbers" id="Department" name="Department" pattern="[A-z]*" placeholder=" Enter Your  Department" required onkeyup="lettersOnly(this)">
+             </div>
+
+             <div class="form-group">
+               <label for="emp Code">Employee Code:</label>
+               <input type="number" id="emp Code" name="emp Code" placeholder=" EMP Code ... EX:12345" max="111111190" min="1" required>
+             </div><br>
+        
+             <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="example@xyz.com" required>
+              </div><br>
+              
+              <div class="form-group">
+               <label for="Contact Det">Contact Details:</label>
+               <input type="tel" id="Contact Det" name="Contact Det" minlength="10" maxlength="10" pattern="[0-9]*" placeholder="Contact Details here" required>
+             </div><br>
+             
+             <div class="form-group">
+               <label for="serial number">Serial Number:</label>
+               <input type="number" id="Serial Number" name="serial number" placeholder="Enter your serial number" min="1" maxlength="10000000" required>
+             </div><br>
+             <div class="form-group">
+               <label for="Laptop Name">Laptop Name:</label>
+               <input type="text" id="Laptop Name" name="Laptop Name" placeholder="type here" required>
+             </div><br>
+             <div class="form-group">
+               <label for="Laptop Specification">Laptop Specification:</label>
+               <select id="lap spec" name="lap spec">
+                  <option value="i7-storage:1TB:31Gb-RAM">i7pro-storage:1TB:31Gb-RAM</option>
+                  <option value="i3-storage:256:8Gb-RAM">i3pro-storage:256:8Gb-RAM</option>
+                  <option value="i5-storage:500:12Gb-RAM">i5pro-storage:500:12Gb-RAM</option>
+               </select>
+               
+             </div><br>
+            <fieldset class="form-group">
+              <legend>Gender:</legend>
+              <label for="Male">Male🤵‍♂️</label>
+              <input type="radio" name="Gender" value="male" id="male">
+             <div class="form-group">
+               <label for="Female">Female👰‍♀️</label>
+               <input type="radio" name="Gender" value="female" id="female">
+               </div>
+              </fieldset>
+             
+             <div class="form-group">
+               <label for="your city">Your City (single-select):	🌎</label>
+               <select id="your city" name="your city">
+                             <option >Select Your City</option>
+                             <option value="Bangalore">Bangalore</option>
+                             <option value="Chennai">Chennai</option>
+                             <option value="Kolkata">Kolkata</option>
+                         </select>
+             </div><br>
+             
+               <div class="form-group">
+                  <label for="do you love">Do you love this form?🌼</label>
+                 <input type="checkbox" checked="checked">
+                 </div>
+            <div class="form-group">
+                <label for="massage">Asset details</label>
+                <textarea name="massage" id="massage" cols="30" rows="10" placeholder="Enter the Asset Details...." required></textarea>
+              </div>
+        
+              <button type="submit">Submit📧</button>
+             
+             
+         </form>
+    </div>
+    <div id="status" ></div>
+   </section>
+    <script src="1.js"></script>
+    <script>
+      function lettersOnly(input)
+      {
+        var regex = /[^a-z]/gi;
+        input.value=input.value.replace(regex,"");
+      }
+    </script>
+</body>
+</html>

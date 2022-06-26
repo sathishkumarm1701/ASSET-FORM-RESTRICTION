@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: steelblue;
+  color: #fff;
+  font-family: 'Muli', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+
+}
+
+.container {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 20px 50px;
+  border-radius:10px;
+  background-image: url("download.jfif") no-repeat;
+  resize: both;
+  overflow: auto;
+  
+}
+
+.container h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.container a {
+  text-decoration: none;
+  color: lightblue;
+}
+.btn {
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  background: rgb(163, 205, 219);
+  padding: 10px;
+  font-family: inherit;
+  font-size: 16px;
+  border: 0;
+  border-radius:  10px  5px;
+  margin-top: 20px;
+}
+.btn:active {
+  transform: scale(1.98);
+}
+
+.text {
+  margin-top: 20px;
+}
+
+.img{
+    width: 300px;
+    background-size: cover;
+}
+label{
+    display: block;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+input{ 
+    position: absolute;
+    transform: scale(0);
+
+}
+input:checked ~.checkbox{
+    transform: rotate(45deg);
+    width: 20px;
+    margin-left: 16px;
+    border-color: #24c78e;
+    border-top-color:transparent;
+    border-left-color: transparent;
+    border-radius: 0;
+    padding: 10px auto;
+}
+.checkbox{
+    display: block;
+    width: 50px;
+    height:50px;
+    border: 3px solid #4a8ce2;
+    border-radius: 60px;
+    transition: all 0.400s;
+    padding: 30px;
+}
+#preloader{
+    background: #000 url(05cb41dd40c1045ef47ee2be34147c79.gif) no-repeat center center;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    background-size: 105%;
+}
